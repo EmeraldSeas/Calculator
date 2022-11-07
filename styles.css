@@ -1,3 +1,10 @@
+:root {
+  --operator: lightblue;
+  --interaction: #7BBDFF;
+  --operand: #2D6162;
+  --special: lightgray;
+}
+
 html {
   text-align: center;
   font-family: monospace;
@@ -53,57 +60,57 @@ button {
 }
 
 .operator {
-  background-color: lightblue;
+  background-color: var(--operator);
 }
 
 .operator:focus {
-  background-color: #7BBDFF;
+  background-color: var(--interaction);
 }
 
 .equals {
-  background-color: lightblue;
+  background-color: var(--operator);
 }
 
 .equals:active {
-  background-color: #7BBDFF;
+  background-color: var(--interaction);
 }
 
 .operand {
-  background-color: #2D6162;
+  background-color: var(--operand);
 }
 
 .operand:active {
-  background-color: #7BBDFF;
+  background-color: var(--interaction);
 }
 
 .decimal {
-  background-color: #2D6162;
+  background-color: var(--operand);
 }
 
 .decimal:active {
-  background-color: #7BBDFF;
+  background-color: var(--interaction);
 }
 
 .clear {
-  background-color: lightgray;
+  background-color: var(--special);
 }
 
 .clear:active {
-  background-color: #7BBDFF;
+  background-color: var(--interaction);
 }
 
 .sign {
-  background-color: lightgray;
+  background-color: var(--special);
 }
 
 .sign:active {
-  background-color: #7BBDFF;
+  background-color: var(--interaction);
 }
 
 .percent {
-  background-color: lightgray;
+  background-color: var(--special);
 }
 
 .percent:active {
-  background-color: #7BBDFF;
+  background-color: var(--interaction);
 }
